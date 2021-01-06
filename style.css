@@ -15,24 +15,53 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0;
 }
 
-.nameTag {
-    width:100%;
+.content {
     height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.header-right img{
+    width: 50px;
+    height: 50px;
+}
+main{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+
+.sidebar{
+    display: flex;
+    height: 100%;
+    background-color: crimson;
+    align-items: center;
+}
+.name-tag {
+    width:100%;
+    height: 40%;
     background-color: aquamarine;
     border-radius: 50px;
     display: grid;
     grid-template-rows: 2fr 4fr 1fr;
+                
 }
 
 .intro {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
     justify-content: center;
     text-align: center;
 }
 
 .intro h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     color: white;
     text-transform: uppercase;
 }
@@ -42,7 +71,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .name h3 {
-    font-size: 5rem;
+    font-size: 2rem;
     color: black;
     text-transform: uppercase;
 }
@@ -51,4 +80,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.black {
+    background-color:blue;
 }
