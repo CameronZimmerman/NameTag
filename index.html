@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cameron's NameTag</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class ='container'>
-        <section class = "nameTag">
+        <section class = "nameTag" id = "bg-color">
             <header class = "intro">
                 <h1>hello</h1>
                 <h3>my name is</h3>
@@ -20,9 +23,17 @@
             </main>
     
             <footer class = "info center">
-                <input id = 'user-input' placeholder="put name here">
-                <button id = 'change-name'>Change Me!</button>
-                <span id = 'counter'>You've changed me  times!</span>
+                <div class = 'buttons1'>
+                    <input id = 'user-input' placeholder="put name here">
+                    <input id = 'pronoun-input' placeholder="put pronouns here">
+                    <input id = 'color-input' placeholder="put color here">
+                    <button id = 'change-name'>Change Me!</button>
+                    <span id = 'counter'>You've changed me -- times!</span>
+                </div>
+                <div class = 'buttons2'>
+                    <button id = "change-font">Make me Fancy?</button>             
+                </div>
+               
             </footer>
         </section>
     </div>   
