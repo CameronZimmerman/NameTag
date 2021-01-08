@@ -47,5 +47,6 @@ fontButtonElement.addEventListener('click', () => {
         myName.style.fontFamily = origFont;
         changedFont = false;
     }
+    changeCounter.textContent = ('you have changed me ' + counter + ' times!');
 
 });
